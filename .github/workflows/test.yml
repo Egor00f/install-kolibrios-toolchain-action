@@ -14,8 +14,8 @@ jobs:
 
       - name: Test toolchain working
         run: |
-          kos32-gcc -v
-          kos32-g++ -v
-          kos32-ar -V 
-          kos32-objcopy -V
-          kos32-strip -V
+          /home/autobuild/tools/win32/bin/kos32-gcc -v
+          /home/autobuild/tools/win32/bin/kos32-g++ -v
+          /home/autobuild/tools/win32/bin/kos32-ar -V 
+          /home/autobuild/tools/win32/bin/kos32-objcopy -V
+          /home/autobuild/tools/win32/bin/kos32-strip -V
