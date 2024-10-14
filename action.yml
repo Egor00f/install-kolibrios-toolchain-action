@@ -1,0 +1,13 @@
+name: Installer
+author: Egor00f
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install toolchain
+      run: |
+        git clone https://github.com/Egor00f/kolibrios-gcc-toolchain.git
+        cd kolibrios-gcc-toolchain
+        chmod u+x install
+        ./install
+      shell: bash
