@@ -1,8 +1,8 @@
-#Install kolibrios toolchain action 
+# Install kolibrios toolchain action 
 
-This is the installer of the gcc toolchain for colibrios in the form of github action.
+This is the installer of the gcc toolchain for kolibrios in the form of github action.
 
-it using instalation script from https://github.com/Egor00f/kolibrios-gcc-toolchain
+it using installation script from https://github.com/Egor00f/kolibrios-gcc-toolchain
 
 
 example:
@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: egor00f/install-kolibrios-toolchain-action@main
+      - uses: Egor00f/install-kolibrios-toolchain-action@main
 
       - name: Test toolchain working
         run: |
