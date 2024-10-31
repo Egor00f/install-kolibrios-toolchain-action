@@ -17,8 +17,6 @@ runs:
         submodules: true
 
     - name: Install toolchain
-      run: |
-        cd kolibrios-gcc-toolchain
-        ./install
+      run: ${{ github.action_path }}/kolibrios-gcc-toolchain/./install
       shell: bash
 
