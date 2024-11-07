@@ -17,6 +17,7 @@ runs:
         submodules: true
 
     - name: Install toolchain
-      run: ${{github.action_path}}/kolibrios-gcc-toolchain/./install
-      shell: bash
+      run: kolibrios-gcc-toolchain/./install
 
+    - name: add to path
+      run: echo "/home/autobuild/tools/win32/bin" >> $GITHUB_PATH
