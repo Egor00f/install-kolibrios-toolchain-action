@@ -18,6 +18,8 @@ runs:
 
     - name: Install toolchain
       run: kolibrios-gcc-toolchain/./install
+      shell: bash
 
     - name: add to path
       run: echo "/home/autobuild/tools/win32/bin" >> $GITHUB_PATH
+      
