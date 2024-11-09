@@ -3,6 +3,7 @@
 		"Egor",
 		"kolibrios",
 		"autobuild",
-		"objcopy"
+		"objcopy",
+		"elif"
 	]
 }
