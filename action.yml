@@ -16,12 +16,11 @@ runs:
       with:
         submodules: true
 
-    - name: Install Windows toolchain 
-      if: runner.os == "Window"
+    - if: runner.os == 'Windows'
       run: kolibrios-gcc-toolchain/install.bat
+      shell
 
-    - name: Install Linux toolchain
-      if: runner.os == "Linux"
+    - if: runner.os == 'Linux'
       run: echo '' | kolibrios-gcc-toolchain/./install
       shell: bash
 
