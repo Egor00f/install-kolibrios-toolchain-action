@@ -7,7 +7,20 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test:
+  linux-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Egor00f/install-kolibrios-toolchain-action@main
+
+      - name: Test toolchain working
+        run: |
+          kos32-gcc -v
+          kos32-g++ -v
+          kos32-ar -V 
+          kos32-objcopy -V
+          kos32-strip -V
+
+  windows-test:
     runs-on: ubuntu-latest
     steps:
       - uses: Egor00f/install-kolibrios-toolchain-action@main
