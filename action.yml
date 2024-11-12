@@ -20,12 +20,12 @@ runs:
       if: runner.os == "Window"
       run: kolibrios-gcc-toolchain/install.bat
       elif: runner.os == "Linux"
-      run: kolibrios-gcc-toolchain/./install
+      run: echo '' | kolibrios-gcc-toolchain/./install
       shell: bash
 
     - name: add to path
       if: runner.os == "Window"
-      run: echo "C:\MinGW\msys/1.0\home\autobuild\tools\win32\bin" >> $GITHUB_PATH
+      run: echo "C:\MinGW\msys\1.0\home\autobuild\tools\win32\bin" >> $GITHUB_PATH
       elif: runner.os == "Linux"
       run: echo "/home/autobuild/tools/win32/bin" >> $GITHUB_PATH
       shell: bash      
