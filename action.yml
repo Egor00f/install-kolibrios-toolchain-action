@@ -21,7 +21,7 @@ runs:
       shell: bash
 
     - if: runner.os == 'Linux'
-      run: echo '' | kolibrios-gcc-toolchain/install
+      run: echo '' | kolibrios-gcc-toolchain/install.sh
       shell: bash
 
   
