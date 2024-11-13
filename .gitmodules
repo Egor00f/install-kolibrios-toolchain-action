@@ -1,3 +1,0 @@
-[submodule "kolibrios-gcc-toolchain"]
-	path = kolibrios-gcc-toolchain
-	url = https://github.com/Egor00f/kolibrios-gcc-toolchain.git
