@@ -4,6 +4,7 @@
 		"kolibrios",
 		"autobuild",
 		"objcopy",
-		"elif"
+		"gitea",
+		"keyrings"
 	]
 }
