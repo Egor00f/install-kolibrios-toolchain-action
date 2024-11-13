@@ -17,11 +17,11 @@ runs:
         submodules: true
 
     - if: runner.os == 'Windows'
-      run: ${{ github.workspace }}/kolibrios-gcc-toolchain/./install.bat
+      run: kolibrios-gcc-toolchain/install.bat
       shell: bash
 
     - if: runner.os == 'Linux'
-      run: echo '' | ${{ github.workspace }}/kolibrios-gcc-toolchain/./install
+      run: echo '' | kolibrios-gcc-toolchain/install
       shell: bash
 
   
