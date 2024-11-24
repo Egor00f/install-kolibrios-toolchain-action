@@ -1,14 +1,15 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-  },
-  "customisation":{
-    "vscode":{
-      "extinctions":{
-        "github.vscode-github-actions",
-        "streetsidesoftware.code-spell-checker",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+
+	},
+	"customizations": {
+		"vscode": {
+			"extinctions": {
+				"github.vscode-github-actions",
+				"streetsidesoftware.code-spell-checker",
 				"streetsidesoftware.code-spell-checker-russian"
-      }
-    }
-  }
+			}
+		}
+	}
 }
